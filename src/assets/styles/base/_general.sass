@@ -2,13 +2,14 @@ html
 	font-size: $base-font-size
 
 * + * 
-	margin-top: 1.5rem
+
 
 body
 	background-color: $main-bg-color
 	font-family: $default-font
 	color: $black
-	font-size: 1rem
+	font-size: $base-font-size
+	line-height: 1.6
 
 h1, h2, h3, h4, h5, h6
 	margin: 0
@@ -36,9 +37,12 @@ textarea
 textarea
 	resize: none
 
-section
+.container
 	position: relative
-	padding: 20px 0
+	width: 100%
+	max-width: $content-size
+	padding: 20px
+	margin: 0 auto
 
 input,
 select,
